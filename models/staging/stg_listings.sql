@@ -35,9 +35,9 @@ renamed as (
   guests_included,
   cleaning_fee,
   security_deposit,
-  monthly_price,
-  weekly_price,
-  price,
+  nullif(replace(split_part(monthly_price, '$', 2), ',', ''), '')::float as monthly_price,
+  nullif(replace(split_part(weekly_price, '$', 2), ',', ''), '')::float as weekly_price,
+  nullif(replace(split_part(price, '$', 2), ',', ''), '')::float as price
   square_feet,
   amenities,
   bed_type,

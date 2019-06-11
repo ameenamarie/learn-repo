@@ -5,7 +5,7 @@ with source as (
 renamed as (
   select
   listing_id,
-  price,
+  nullif(replace(split_part(price, '$', 2), ',', ''), '')::float as price,
   available,
   "date"
 
