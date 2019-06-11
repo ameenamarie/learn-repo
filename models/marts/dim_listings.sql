@@ -3,8 +3,9 @@
 ) }}
 
 with listings as (
-  *,
-  {{ has_wifi }}
+  select
+    *,
+    {{ has_wifi() }}
   from {{ ref('stg_listings') }}
 )
 
