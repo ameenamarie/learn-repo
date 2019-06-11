@@ -5,7 +5,7 @@
 with listings as (
   select
     *,
-    {{ has_wifi }}
+    {{ has_wifi() }}
   from {{ ref('stg_listings') }}
 )
 
