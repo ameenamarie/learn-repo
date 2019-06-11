@@ -38,7 +38,7 @@ renamed as (
   security_deposit,
   nullif(replace(split_part(monthly_price, '$', 2), ',', ''), '')::float as monthly_price,
   nullif(replace(split_part(weekly_price, '$', 2), ',', ''), '')::float as weekly_price,
-  nullif(replace(split_part(price, '$', 2), ',', ''), '')::float as price
+  nullif(replace(split_part(price, '$', 2), ',', ''), '')::float as price,
   square_feet,
   amenities,
   bed_type,

@@ -5,7 +5,7 @@ with source as (
 renamed as (
   select
     review,
-    listings_id,
+    listing_id,
     id,
     comments,
     reviewer_name,
