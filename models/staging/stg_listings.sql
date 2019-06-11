@@ -1,5 +1,5 @@
 with source as (
-  select * from source_date.listings
+  select * from source_data.listings
 ),
 
 renamed as (
