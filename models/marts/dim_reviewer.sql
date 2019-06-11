@@ -14,14 +14,14 @@ with review as (
     count(review)
       over (partition by reviewer_name order by "date"
         rows between unbounded preceding and unbounded following) as total_reviews
-  from stg_reviews
+  from {{ ref('stg_reviews') }}
 ),
 
 listings as (
   select
     listings_id,
     neighbourhood
-  from stg_listings
+  from {{ ref('stg_listings') }}
 ),
 
 joined as (
