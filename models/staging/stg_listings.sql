@@ -3,6 +3,7 @@ with source as (
 ),
 
 renamed as (
+  select
   id as listings_id,
   review_scores_value,
   review_scores_location,

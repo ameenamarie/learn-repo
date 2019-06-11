@@ -3,12 +3,13 @@ with source as (
 ),
 
 renamed as (
-  review,
-  listings_id,
-  id,
-  comments,
-  reviewer_name,
-  "date"
+  select
+    review,
+    listings_id,
+    id,
+    comments,
+    reviewer_name,
+    "date"
 
 
   from source
