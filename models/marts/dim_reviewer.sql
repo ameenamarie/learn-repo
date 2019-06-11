@@ -30,7 +30,7 @@ joined as (
     total_reviews
   from review
   join listings 
-    on review.listings_id = listings.listings_id
+    on review.listing_id = listings.listings_id
 )
 
 select * from joined
