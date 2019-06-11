@@ -1,7 +1,5 @@
 {{ config (
   materialized = 'table'
-  dist = 'review_id'
-  sort = 'review_id'
 ) }}
 
 with review as (
