@@ -4,8 +4,8 @@ with source as (
 
 renamed as (
   review,
-  listing_id,
-  id as review_id,
+  listings_id,
+  id,
   comments,
   reviewer_name,
   "date"
